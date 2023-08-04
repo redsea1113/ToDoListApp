@@ -15,6 +15,7 @@
 		9C68F1BB2A7D377A0058A1CF /* ToDoListAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C68F1BA2A7D377A0058A1CF /* ToDoListAppUITests.swift */; };
 		9C68F1BD2A7D377A0058A1CF /* ToDoListAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C68F1BC2A7D377A0058A1CF /* ToDoListAppUITestsLaunchTests.swift */; };
 		9C68F1CA2A7D39AB0058A1CF /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C68F1C92A7D39AB0058A1CF /* Todo.swift */; };
+		9C68F1CC2A7D44F90058A1CF /* TodoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C68F1CB2A7D44F90058A1CF /* TodoDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		9C68F1BA2A7D377A0058A1CF /* ToDoListAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListAppUITests.swift; sourceTree = "<group>"; };
 		9C68F1BC2A7D377A0058A1CF /* ToDoListAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9C68F1C92A7D39AB0058A1CF /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		9C68F1CB2A7D44F90058A1CF /* TodoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				9C68F19F2A7D37770058A1CF /* ToDoListAppApp.swift */,
 				9C68F1C92A7D39AB0058A1CF /* Todo.swift */,
 				9C68F1A12A7D37770058A1CF /* ContentView.swift */,
+				9C68F1CB2A7D44F90058A1CF /* TodoDetailView.swift */,
 				9C68F1A32A7D37790058A1CF /* Assets.xcassets */,
 				9C68F1A52A7D37790058A1CF /* Preview Content */,
 			);
@@ -263,6 +266,7 @@
 				9C68F1A22A7D37770058A1CF /* ContentView.swift in Sources */,
 				9C68F1CA2A7D39AB0058A1CF /* Todo.swift in Sources */,
 				9C68F1A02A7D37770058A1CF /* ToDoListAppApp.swift in Sources */,
+				9C68F1CC2A7D44F90058A1CF /* TodoDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

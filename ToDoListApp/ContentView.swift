@@ -19,21 +19,11 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             List($todos) { $todo in
-                HStack{
-                    Image(systemName: todo.isCompleted ? "checkmark.circle.fill" : "circle") .onTapGesture {
-                        todo.isCompleted.toggle()
-                    }
-                    VStack(alignment: .leading) {
-                        Text(todo.title)
-                            .strikethrough(todo.isCompleted)
-                        if !todo.subtitle.isEmpty {
-                            Text(todo.subtitle)
-                                .font(.footnote)
-                                .foregroundColor(.gray)
-                                .strikethrough(todo.isCompleted)
-                            
-                        }
-                    }
+                
+                NavigationLink {
+                    TodoDetailView(todo: $todo)
+                } label: {
+                    ExtractedView(todo:$todo)
                 }
             }.navigationTitle("My Todo List")
         }
@@ -45,5 +35,28 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct ExtractedView: View {
+    
+    @Binding var todo: Todo
+    var body: some View {
+        HStack{
+            Image(systemName: todo.isCompleted ? "checkmark.circle.fill" : "circle") .onTapGesture {
+                todo.isCompleted.toggle()
+            }
+            VStack(alignment: .leading) {
+                Text(todo.title)
+                    .strikethrough(todo.isCompleted)
+                if !todo.subtitle.isEmpty {
+                    Text(todo.subtitle)
+                        .font(.footnote)
+                        .foregroundColor(.gray)
+                        .strikethrough(todo.isCompleted)
+                    
+                }
+            }
+        }
     }
 }
